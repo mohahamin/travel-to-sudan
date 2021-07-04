@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+:root {
+    --main-color: #af7a58;
+    --sec-color: #f8e6d2;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    margin: 0 200px;
+    padding: 0 10px;
+}
+@media(max-width: 768px) {
+    .container {
+        margin: 0 30px;
+        padding: 0 10px;
+    }
+}
+.landing .container {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/abdulaziz-mohammed-DJCoSTyte7g-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: var(--main-color);
+}
+.paragraph {
+    color: white;
+    font-weight: lighter;
+    font-size: medium;
+    max-width: 50%;
+}
+@media(max-width: 768px){
+    .paragraph {
+        max-width: 90%;
+    }
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 50px 0;
+    min-height: 100vh;
+}
+@media(max-width: 768px){
+    .item {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        justify-content: center;
+    }
+}
+.item .info {
+    padding: 30px 30px 30px 0;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+@media(max-width: 768px){
+    .item .info {
+        padding: 15px;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+.item .info h1 {
+    color: var(--main-color);
+}
+.item img {
+    max-width: 50%;
+    max-height: 100%;
+    box-shadow: rgb(212, 212, 212) 1px 1px 5px;
+}
+.item i {
+    color: var(--main-color);
+}
+.item button {
+    border: 2px solid var(--main-color);
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    color: var(--main-color);
+    font-weight: 500;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+.item button:hover {
+    border: 2px solid white;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+footer {
+    height: 30vh;
+    padding: 50px;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+footer i {
+    color: white;
+    padding: 10px;
+}
+.more-btn {
+    display: flex;
+    justify-content: center;
+}
+.more-btn button {
+    border: 2px solid var(--main-color);
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    color: var(--main-color);
+    font-weight: 500;
+    letter-spacing: 3px;
+    transition: .3s;
+    min-width: 150px;
+}
+.more-btn button:hover {
+    border: 2px solid white;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
